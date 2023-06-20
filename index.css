@@ -1,0 +1,126 @@
+body{
+    color: white;
+    margin: 0;
+    background-color: #01171f;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+#navbar{
+    background-color: #03212c;
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    fill: #3d7389;
+}
+.bars-icon{
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #3d7389;
+}
+#links-container{
+    display: none;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.link{
+    color: #082f49;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.profile{
+    width: 40%;
+    height: 40%;
+} 
+#myself{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 1rem;
+    width: 100%;
+    background-image: url(https://www.cancerresearch.org/wp-content/uploads/2022/06/d0080aa8-9275-49e1-9d73-605240f2610a.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#proyectos{
+    max-width: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.github-info {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+.github-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+.github-info:hover .github-img {
+    transform: rotateY(180deg);
+  }
+
+.front-img, .back-info {
+    border-radius: 0.5rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+.front-img {
+    color: black;
+  }
+  
+.back-info {
+    background-color: #05384C;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.img-git{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+.info-page{
+    margin: 0;
+    padding: 1rem;
+  }
+.logo-git{
+    width: 2rem;
+    height: 2.5rem;
+    fill: #3d7389;
+  }
